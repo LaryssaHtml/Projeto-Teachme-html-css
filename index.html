@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Teach.me</title>
 </head>
 <body>
-    <div>
 
-        <sidebar>
-             <details open>
+
+    <div class="container">
+
+        <sidebar class="sidebar">
+             <details open class="sugestao">
                 <summary>Tópicos Sugeridos</summary>
                 <button>HTML</button>
                 <button>CSS</button>
@@ -18,7 +23,7 @@
                 <button>TypeScript</button>
              </details>
 
-             <details open>
+             <details open class="historico">
                 <summary>Histórico</summary>
                 <button>HTML</button>
                 <button>CSS</button>
@@ -28,12 +33,13 @@
 
         </sidebar>
 
-        <div>
+        <div class="content">
 
-           <div>
+           <!-- <div class="box-home">
+
                <span>Olá, eu sou o</span>
 
-               <h1>teach.me</h1>
+               <h1>teach<span>.me</span></h1>
 
                <p>Estou aqui para te ajudar nos seus estudos.
                 Selecione um dos tópicos sugeridos ao lado
@@ -43,9 +49,68 @@
 
            </div>
 
-             <div>
+             <div class="box-input">
                   <textarea placeholder="Insira o tema que deseja estudar..."></textarea>
-            </div>
+                  <button>Enviar pergunta</button>
+            </div> -->
+              
+             <div class="box-chat">
+                <h1>Você está estudando sobre <span>HTML</span></h1>
+
+                <div class="pergunta">
+
+                    <h2><img src="./imagens/question.svg" alt="">Pergunta</h2>
+
+                    <p> Claro! Aqui está a pergunta simulada: 
+						"Como você descreveria o seu conhecimento 
+						e experiência com HTML? Você poderia 
+						fornecer um exemplo de um projeto em 
+						que utilizou HTML e como isso impactou 
+						positivamente o resultado final?" 
+						Aguardo a sua resposta para poder 
+						fornecer feedback!</p>
+
+                </div>
+
+                <div class="resposta">
+
+                    <h2>Sua resposta</h2>
+
+                    <p> Sei bastante sobre HTML, fiz alguns 
+                        sites e estou aprendendo.</p>
+                        
+                </div>
+                
+
+                <div class="feedback">
+
+                    <h2>Feedback Teach<span>.me</span></h2>
+
+                    <p> Ótimo! Parece que você tem uma boa experiência 
+						com HTML e construiu alguns sites. É importante 
+						sempre destacar a prática e os projetos 
+						realizados durante uma entrevista de emprego. 
+						No entanto, vale ressaltar que seria 
+						interessante fornecer um exemplo específico 
+						de um projeto em que você utilizou HTML e 
+						como suas habilidades impactaram positivamente 
+						o resultado final. Isso pode ajudar a destacar 
+						suas habilidades de forma mais concreta e 
+						transmitir confiança ao entrevistador. 
+						Espero que esse feedback seja útil e esteja 
+						à disposição para mais perguntas ou informações 
+						adicionais.</p>
+
+                        <div class="actions">
+                            <button>Estudar novo tópico</button>
+                        </div>
+                </div>
+             </div>
+            
+
+            <footer class="box-footer">
+                <p>teach<span>.me</span></p>
+            </footer>
 
         </div>
 
